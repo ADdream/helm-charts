@@ -10,9 +10,9 @@ entries:
           url: https://github.com/prometheus/prometheus
     apiVersion: v2
     appVersion: v2.47.0
-    created: "2023-10-11T11:57:14.6969727-04:00"
+    created: "2023-10-11T12:16:03.3164507-04:00"
     description: Prometheus is a monitoring system and time series database.
-    digest: 7f763bd9ddfe64a1dc0e5c9c1256f31e15763297c1c85a311819651ade0f83ab
+    digest: e385d2276ea08a7f59c2b94ba5b277945ca52ee2d26ffa0f2e9c86237d406874
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -41,4 +41,4 @@ entries:
     urls:
     - https://addream.github.io/helm-charts/prometheus-25.1.1.tgz
     version: 25.1.1
-generated: "2023-10-11T11:57:14.6949723-04:00"
+generated: "2023-10-11T12:16:03.3112218-04:00"
