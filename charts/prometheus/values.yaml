@@ -719,7 +719,8 @@ serverFiles:
       - job_name: prometheus
         static_configs:
           - targets:
-            - localhost:9090
+            # - localhost:9090
+            - my-opentelemetry-collector:8889
 
       # A scrape configuration for running Prometheus on a Kubernetes cluster.
       # This uses separate scrape configs for cluster components (i.e. API server, node)
@@ -1181,7 +1182,7 @@ extraManifests: []
 alertmanager:
   ## If false, alertmanager will not be installed
   ##
-  enabled: true
+  enabled: false
 
   persistence:
     size: 2Gi
@@ -1198,7 +1199,7 @@ alertmanager:
 kube-state-metrics:
   ## If false, kube-state-metrics sub-chart will not be installed
   ##
-  enabled: true
+  enabled: false
 
 ## promtheus-node-exporter sub-chart configurable values
 ## Please see https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-node-exporter
@@ -1206,7 +1207,7 @@ kube-state-metrics:
 prometheus-node-exporter:
   ## If false, node-exporter will not be installed
   ##
-  enabled: true
+  enabled: false
 
   rbac:
     pspEnabled: false
@@ -1220,7 +1221,7 @@ prometheus-node-exporter:
 prometheus-pushgateway:
   ## If false, pushgateway will not be installed
   ##
-  enabled: true
+  enabled: false
 
   # Optional service annotations
   serviceAnnotations:
